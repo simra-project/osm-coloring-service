@@ -1,0 +1,2 @@
+osm-coloring-service:
+    geo-json-dir: "./geo-jsons"

@@ -1,0 +1,117 @@
+2021-07-21 15:28:00 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Starting OsmColoringApplicationKt using Java 11.0.10 on MBPvonJonathan with PID 4831 (/Users/jhasenburg/git/simra-services/osm-coloring/target/classes started by jhasenburg in /Users/jhasenburg/git/simra-services/osm-coloring)
+2021-07-21 15:28:00 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - No active profile set, falling back to default profiles: default
+2021-07-21 15:28:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:28:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Elasticsearch repository interfaces.
+2021-07-21 15:28:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:28:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-21 15:28:03 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.3-5d21bea28db1e89ecc1f66311ebdec9dc3aa7d64 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2021-07-21 15:28:04 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.2
+2021-07-21 15:28:04 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2021-07-21 15:28:04 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.12.1
+2021-07-21 15:28:04 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.3
+2021-07-21 15:28:04 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.13.3
+2021-07-21 15:28:04 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Started OsmColoringApplicationKt in 5.66 seconds (JVM running for 8.051)
+2021-07-21 15:28:13 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Starting OsmColoringApplicationKt using Java 11.0.10 on MBPvonJonathan with PID 4842 (/Users/jhasenburg/git/simra-services/osm-coloring/target/classes started by jhasenburg in /Users/jhasenburg/git/simra-services/osm-coloring)
+2021-07-21 15:28:13 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - No active profile set, falling back to default profiles: default
+2021-07-21 15:28:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:28:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2021-07-21 15:28:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:28:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-21 15:28:15 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.3-5d21bea28db1e89ecc1f66311ebdec9dc3aa7d64 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2021-07-21 15:28:15 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.2
+2021-07-21 15:28:15 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2021-07-21 15:28:15 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.12.1
+2021-07-21 15:28:15 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.3
+2021-07-21 15:28:15 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.13.3
+2021-07-21 15:28:15 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Started OsmColoringApplicationKt in 3.047 seconds (JVM running for 4.179)
+2021-07-21 15:28:15 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - ./geojsons
+2021-07-21 15:36:38 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Starting OsmColoringApplicationKt using Java 11.0.10 on MBPvonJonathan with PID 4946 (/Users/jhasenburg/git/simra-services/osm-coloring/target/classes started by jhasenburg in /Users/jhasenburg/git/simra-services/osm-coloring)
+2021-07-21 15:36:38 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - No active profile set, falling back to default profiles: default
+2021-07-21 15:36:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:36:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Elasticsearch repository interfaces.
+2021-07-21 15:36:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:36:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-21 15:36:40 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.3-5d21bea28db1e89ecc1f66311ebdec9dc3aa7d64 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2021-07-21 15:36:40 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.2
+2021-07-21 15:36:40 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2021-07-21 15:36:40 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.12.1
+2021-07-21 15:36:40 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.3
+2021-07-21 15:36:40 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.13.3
+2021-07-21 15:36:41 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Started OsmColoringApplicationKt in 3.733 seconds (JVM running for 4.877)
+2021-07-21 15:36:41 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - ./geojsons
+2021-07-21 15:37:14 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Starting OsmColoringApplicationKt using Java 11.0.10 on MBPvonJonathan with PID 4961 (/Users/jhasenburg/git/simra-services/osm-coloring/target/classes started by jhasenburg in /Users/jhasenburg/git/simra-services/osm-coloring)
+2021-07-21 15:37:14 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - No active profile set, falling back to default profiles: default
+2021-07-21 15:37:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:37:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2021-07-21 15:37:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:37:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-21 15:37:16 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.3-5d21bea28db1e89ecc1f66311ebdec9dc3aa7d64 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2021-07-21 15:37:16 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.2
+2021-07-21 15:37:16 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2021-07-21 15:37:16 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.12.1
+2021-07-21 15:37:16 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.3
+2021-07-21 15:37:16 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Client and Cluster: 7.12.1 - 7.13.3
+2021-07-21 15:37:16 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Started OsmColoringApplicationKt in 3.24 seconds (JVM running for 4.646)
+2021-07-21 15:37:16 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - /Users/jhasenburg/git/simra-services/osm-coloring/./geojsons
+2021-07-21 15:37:44 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - Starting OsmColoringApplicationKt using Java 11.0.10 on MBPvonJonathan with PID 4965 (/Users/jhasenburg/git/simra-services/osm-coloring/target/classes started by jhasenburg in /Users/jhasenburg/git/simra-services/osm-coloring)
+2021-07-21 15:37:44 [main] INFO  d.m.s.s.o.c.OsmColoringApplicationKt - No active profile set, falling back to default profiles: default
+2021-07-21 15:37:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:37:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2021-07-21 15:37:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-07-21 15:37:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-07-21 15:37:45 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'osmColoringApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'osmColoringConfig' defined in file [/Users/jhasenburg/git/simra-services/osm-coloring/target/classes/de/mcc/simra/services/osm/coloring/config/OsmColoringConfig.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [de.mcc.simra.services.osm.coloring.config.OsmColoringConfig$$EnhancerBySpringCGLIB$$c487fb32]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Supplied GeoJson directory /Users/jhasenburg/git/simra-services/osm-coloring/./geo-jsons is not a directory.
+2021-07-21 15:37:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-21 15:37:45 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'osmColoringApplication': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'osmColoringConfig' defined in file [/Users/jhasenburg/git/simra-services/osm-coloring/target/classes/de/mcc/simra/services/osm/coloring/config/OsmColoringConfig.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [de.mcc.simra.services.osm.coloring.config.OsmColoringConfig$$EnhancerBySpringCGLIB$$c487fb32]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Supplied GeoJson directory /Users/jhasenburg/git/simra-services/osm-coloring/./geo-jsons is not a directory.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at de.mcc.simra.services.osm.coloring.OsmColoringApplicationKt.main(OsmColoringApplication.kt:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'osmColoringConfig' defined in file [/Users/jhasenburg/git/simra-services/osm-coloring/target/classes/de/mcc/simra/services/osm/coloring/config/OsmColoringConfig.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [de.mcc.simra.services.osm.coloring.config.OsmColoringConfig$$EnhancerBySpringCGLIB$$c487fb32]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Supplied GeoJson directory /Users/jhasenburg/git/simra-services/osm-coloring/./geo-jsons is not a directory.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [de.mcc.simra.services.osm.coloring.config.OsmColoringConfig$$EnhancerBySpringCGLIB$$c487fb32]: Constructor threw exception; nested exception is java.lang.IllegalStateException: Supplied GeoJson directory /Users/jhasenburg/git/simra-services/osm-coloring/./geo-jsons is not a directory.
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalStateException: Supplied GeoJson directory /Users/jhasenburg/git/simra-services/osm-coloring/./geo-jsons is not a directory.
+	at de.mcc.simra.services.osm.coloring.config.OsmColoringConfig.<init>(OsmColoringConfig.kt:10)
+	at de.mcc.simra.services.osm.coloring.config.OsmColoringConfig$$EnhancerBySpringCGLIB$$c487fb32.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 34 common frames omitted
