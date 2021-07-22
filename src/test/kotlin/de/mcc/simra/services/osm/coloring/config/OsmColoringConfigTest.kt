@@ -11,7 +11,6 @@ import org.springframework.test.context.ActiveProfiles
 
 private val LOG: Logger = LogManager.getLogger()
 
-
 // set profile so that we can skip components that should not be run during tests (e.g., Runner.kt)
 @ActiveProfiles("test")
 @SpringBootTest // load the complete application context

@@ -31,7 +31,7 @@
     </appender>
 
 
-    <logger name="de.hasenburg.demo" level="info" additivity="false">
+    <logger name="de.mcc.simra" level="trace" additivity="false">
         <appender-ref ref="FILE"/>
         <appender-ref ref="STDOUT"/>
     </logger>

@@ -34,3 +34,4 @@ build/
 
 ### Other ###
 logs/*.log
+logs/archived/*.log
