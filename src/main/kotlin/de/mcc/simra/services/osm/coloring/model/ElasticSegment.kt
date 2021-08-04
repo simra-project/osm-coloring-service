@@ -23,7 +23,7 @@ import org.springframework.data.elasticsearch.core.geo.GeoJsonPolygon
     }
 }
  */
-@Document(indexName = "segments")
+@Document(indexName = "#{@osmColoringConfigData.elasticSegmentIndexName}")
 data class ElasticSegment(
 
     @Id
@@ -46,6 +46,8 @@ data class ElasticSegment(
 
     @Field(type = FieldType.Double)
     val length: Double?,
+
+    // TODO add markers as nested fields as done here: https://www.baeldung.com/spring-data-elasticsearch-tutorial
 
     val shape: GeoJsonPolygon
 

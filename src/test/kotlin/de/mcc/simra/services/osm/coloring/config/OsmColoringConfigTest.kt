@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.context.ApplicationContext
 import org.springframework.test.context.ActiveProfiles
 
 private val LOG: Logger = LogManager.getLogger()
@@ -28,7 +27,7 @@ class OsmColoringConfigTest {
     @Test
     fun exception() {
         // create our own config instead of relying on dependency injection
-        val osmColoringConfigData = OsmColoringConfigData().apply { this.geoJsonDir = "./does_not_exist" }
+        val osmColoringConfigData = OsmColoringConfigData().apply { this.geoJsonDirPath = "./does_not_exist" }
         val exception = assertThrows(IllegalArgumentException::class.java) {
             OsmColoringConfig(osmColoringConfigData)
         }

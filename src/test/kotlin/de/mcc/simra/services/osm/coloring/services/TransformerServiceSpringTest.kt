@@ -26,7 +26,7 @@ private val LOG: Logger = LogManager.getLogger()
  */
 @ExperimentalCoroutinesApi
 @ActiveProfiles("test") // do not run the runner
-@SpringBootTest(properties = ["osm-coloring-service.geo-json-dir=src/test/resources/transformer"])
+@SpringBootTest(properties = ["osm-coloring-service.geo-json-dir-path=src/test/resources/transformer"])
 class TransformerServiceSpringTest {
 
     @Autowired

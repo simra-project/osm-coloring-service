@@ -8,5 +8,10 @@ import java.io.File
 @Configuration
 @ConfigurationProperties(prefix = "osm-coloring-service")
 class OsmColoringConfigData {
-    lateinit var geoJsonDir: String
+    lateinit var geoJsonDirPath: String
+
+    // fields with default values that can be overwritten by applications.yml
+    var elasticHostAndPort: String = "localhost:9200"
+    var elasticSegmentIndexName = "segments"
+
 }

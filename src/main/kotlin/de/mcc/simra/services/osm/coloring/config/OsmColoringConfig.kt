@@ -10,7 +10,7 @@ import java.io.File
 @Configuration
 class OsmColoringConfig(osmColoringConfigData: OsmColoringConfigData) {
 
-    val geoJsonDir = File(osmColoringConfigData.geoJsonDir).apply {
+    val geoJsonDir = File(osmColoringConfigData.geoJsonDirPath).apply {
         require(this.isDirectory) { "Supplied GeoJson directory ${this.absolutePath} is not a directory."}
     }
 
