@@ -10,3 +10,5 @@ Start a single elastic node and kibana with docker-compose:
 cd docker-compose
 docker-compose up
 ```
+
+To see coroutine names in log, supply the `-Dkotlinx.coroutines.debug` VM option.

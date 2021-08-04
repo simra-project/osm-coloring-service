@@ -22,9 +22,11 @@ private val LOG: Logger = LogManager.getLogger()
 @Service
 class TransformerService(val geoFeatureChannel: Channel<GeoFeature>, val elasticSegmentChannel: Channel<ElasticSegment>) {
 
-    suspend fun transformIncomingGeoFeaturesBlocking() {
+    suspend fun transformIncomingGeoFeaturesBlocking() = coroutineScope {
         for (geoFeature in geoFeatureChannel) {
-            transform(geoFeature)
+            launch(CoroutineName("Transformer")) {
+                transform(geoFeature)
+            }
         }
         LOG.info("GeoFeatureChannel was closed, blocking function ends.")
     }

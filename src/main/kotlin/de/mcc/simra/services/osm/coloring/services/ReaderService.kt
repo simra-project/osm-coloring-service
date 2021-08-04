@@ -27,7 +27,7 @@ class ReaderService(val geoJsonDir: File, val geoFeatureChannel: Channel<GeoFeat
         // read in files in parallel
         val jobs = mutableListOf<Job>()
         for (file in files) {
-            // use IO dispatcher since file operation
+            // use IO dispatcher since file operation, one coroutine per file
             jobs.add(launch(Dispatchers.IO + CoroutineName(file.nameWithoutExtension)) { extractGeoJsonFeatures(file) })
         }
         jobs.joinAll()

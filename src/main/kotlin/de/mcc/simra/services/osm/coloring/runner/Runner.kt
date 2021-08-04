@@ -26,12 +26,12 @@ class Runner(
 
     override fun run(args: ApplicationArguments) {
         LOG.info("Reading files from ${osmColoringConfig.geoJsonDir.absolutePath}")
-        runBlocking {
-            val dispatcher = Dispatchers.Default + CoroutineName("Runner")
-
-            launch(dispatcher) { readerService.processExistingFiles() }
-            launch(dispatcher) { transformerService.transformIncomingGeoFeaturesBlocking() }
-            launch(dispatcher) { elasticIndexService.indexIncomingElasticSegmentsBlocking() }
+        // to have multiple threads available
+        runBlocking(Dispatchers.Default + CoroutineName("Runner")) {
+            // start in reverse order to prevent backlog
+            launch { elasticIndexService.indexIncomingElasticSegmentsBlocking() }
+            launch { transformerService.transformIncomingGeoFeaturesBlocking() }
+            launch { readerService.processExistingFiles() }
             LOG.info("Started all coroutines")
         }
     }
