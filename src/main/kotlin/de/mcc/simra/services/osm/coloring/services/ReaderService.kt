@@ -1,6 +1,5 @@
-package de.mcc.simra.services.osm.coloring.reader
+package de.mcc.simra.services.osm.coloring.services
 
-import de.mcc.simra.services.osm.coloring.config.OsmColoringConfig
 import de.mcc.simra.services.osm.coloring.model.GeoFeature
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
@@ -14,9 +13,10 @@ import java.io.File
 private val LOG: Logger = LogManager.getLogger()
 
 /**
- * This service reads in all files from the geo-jsons directory and writes individual GeoJson features into channel.
- * Also creates a watcher service that monitors file changes.
- *  - Create/modify: write features into put-channel.
+ * This service reads in all files from the defined [geoJsonDir] and writes individual [GeoFeature] into the [geoFeatureChannel]
+ *
+ * TODO Creates a watcher service that monitors file changes.
+ *  - Create/modify: write features into channel
  *  - Delete: log name of file that got deleted
  */
 @Service
@@ -48,7 +48,7 @@ class ReaderService(val geoJsonDir: File, val geoFeatureChannel: Channel<GeoFeat
      * Extract GeoJson features from file and write into channel
      */
     private suspend fun extractGeoJsonFeatures(file: File) {
-        LOG.debug("Processing ${file.name}")
+        LOG.trace("Processing ${file.name}")
         val jsonString = file.readText()
         val jsonObject = try {
             val jsonObject = JSONObject(jsonString)
@@ -63,12 +63,13 @@ class ReaderService(val geoJsonDir: File, val geoFeatureChannel: Channel<GeoFeat
         }
 
         val features = jsonObject.getJSONArray("features")
-        LOG.debug("Found ${features.length()} features in ${file.name}")
+        LOG.trace("Found ${features.length()} features in ${file.name}")
         for (i in 0 until features.length()) {
             val o = features.getJSONObject(i)
-            LOG.trace(o)
+            val textId = o.getString("id")
             // write features in channel
-            geoFeatureChannel.send(GeoFeature(o, file.name))
+            geoFeatureChannel.send(GeoFeature(textId, o, file.nameWithoutExtension))
+            LOG.debug("Wrote GeoFeature with textId {}", textId)
         }
     }
 

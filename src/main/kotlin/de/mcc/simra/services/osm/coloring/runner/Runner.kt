@@ -1,7 +1,8 @@
 package de.mcc.simra.services.osm.coloring.runner
 
 import de.mcc.simra.services.osm.coloring.config.OsmColoringConfig
-import de.mcc.simra.services.osm.coloring.reader.ReaderService
+import de.mcc.simra.services.osm.coloring.services.ReaderService
+import de.mcc.simra.services.osm.coloring.services.TransformerService
 import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -17,12 +18,19 @@ private val LOG: Logger = LogManager.getLogger()
 
 @Profile("!test") // do not run during tests
 @Component
-class Runner(val osmColoringConfig: OsmColoringConfig, val readerService: ReaderService) : ApplicationRunner {
+class Runner(
+    val osmColoringConfig: OsmColoringConfig,
+    val readerService: ReaderService,
+    val transformerService: TransformerService
+) : ApplicationRunner {
 
     override fun run(args: ApplicationArguments) {
         LOG.info("Reading files from ${osmColoringConfig.geoJsonDir.absolutePath}")
         runBlocking {
-            launch(Dispatchers.Default) { readerService.processExistingFiles() }
+            val dispatcher = Dispatchers.Default + CoroutineName("Runner")
+
+            launch(dispatcher) { readerService.processExistingFiles() }
+            launch(dispatcher) { transformerService.transformIncomingGeoFeaturesBlocking() }
             LOG.info("Started all coroutines")
         }
     }

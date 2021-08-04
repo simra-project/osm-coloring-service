@@ -1,9 +1,8 @@
-package de.mcc.simra.services.osm.coloring.reader
+package de.mcc.simra.services.osm.coloring.services
 
 import de.mcc.simra.services.osm.coloring.model.GeoFeature
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.channels.ChannelResult
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withTimeoutOrNull

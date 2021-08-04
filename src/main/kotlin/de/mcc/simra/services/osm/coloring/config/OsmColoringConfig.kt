@@ -1,11 +1,10 @@
 package de.mcc.simra.services.osm.coloring.config
 
-import de.mcc.simra.services.osm.coloring.model.ElasticDocument
+import de.mcc.simra.services.osm.coloring.model.ElasticSegment
 import de.mcc.simra.services.osm.coloring.model.GeoFeature
 import kotlinx.coroutines.channels.Channel
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.context.annotation.Scope
 import java.io.File
 
 @Configuration
@@ -26,7 +25,12 @@ class OsmColoringConfig(osmColoringConfigData: OsmColoringConfigData) {
     }
 
     @Bean
-    fun elasticDocumentChannel(): Channel<ElasticDocument> {
+    fun elasticSegmentChannel(): Channel<ElasticSegment> {
+        return Channel(1000)
+    }
+
+    @Bean
+    fun elasticMarkerChannel(): Channel<ElasticSegment> {
         return Channel(1000)
     }
 
