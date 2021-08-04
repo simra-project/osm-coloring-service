@@ -18,6 +18,7 @@ class ElasticConfig(val osmColoringConfigData: OsmColoringConfigData) {
     fun client(): RestHighLevelClient? {
         val clientConfiguration = ClientConfiguration.builder()
             .connectedTo(osmColoringConfigData.elasticHostAndPort)
+            .withSocketTimeout(60000) // 60 second timeout
             .build()
         return RestClients.create(clientConfiguration).rest()
     }

@@ -21,12 +21,12 @@ class OsmColoringConfig(osmColoringConfigData: OsmColoringConfigData) {
 
     @Bean
     fun geoFeatureChannel(): Channel<GeoFeature> {
-        return Channel(1000)
+        return Channel(10000)
     }
 
     @Bean
     fun elasticSegmentChannel(): Channel<ElasticSegment> {
-        return Channel(1000)
+        return Channel(10000)
     }
 
     @Bean

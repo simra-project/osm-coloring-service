@@ -31,7 +31,7 @@
     </appender>
 
 
-    <logger name="de.mcc.simra" level="debug" additivity="false">
+    <logger name="de.mcc.simra" level="info" additivity="false">
         <appender-ref ref="FILE"/>
         <appender-ref ref="STDOUT"/>
     </logger>

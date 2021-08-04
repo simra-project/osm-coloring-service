@@ -19,9 +19,10 @@ class ElasticIndexService(val elasticRepository: ElasticRepository, val elasticS
     suspend fun indexIncomingElasticSegmentsBlocking() = coroutineScope {
         while (!elasticSegmentChannel.isClosedForReceive) {
             // we want to batch 50 elements, but never wait more than a second
-            val chunk = elasticSegmentChannel.chunked(50, 1000)
+            val chunk = elasticSegmentChannel.chunked(1000, 1000)
             // we run this in a coroutine since it is IO, one coroutine per successful chunk
-            launch(Dispatchers.IO + CoroutineName("ElasticIndexer")) {
+            // TODO maximum of four parallel jobs
+            launch(Dispatchers.Default + CoroutineName("ElasticIndexer")) {
                 index(chunk)
             }
         }

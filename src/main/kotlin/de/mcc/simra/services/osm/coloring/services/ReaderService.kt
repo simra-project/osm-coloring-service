@@ -26,9 +26,10 @@ class ReaderService(val geoJsonDir: File, val geoFeatureChannel: Channel<GeoFeat
         val files = getCurrentFiles()
         // read in files in parallel
         val jobs = mutableListOf<Job>()
+        LOG.info("Found ${files.size} files for processing")
         for (file in files) {
-            // use IO dispatcher since file operation, one coroutine per file
-            jobs.add(launch(Dispatchers.IO + CoroutineName(file.nameWithoutExtension)) { extractGeoJsonFeatures(file) })
+            // run in coroutine to parallize, one coroutine per file (we could use IO but this might overload elastic)
+            jobs.add(launch(Dispatchers.Default + CoroutineName(file.nameWithoutExtension)) { extractGeoJsonFeatures(file) })
         }
         jobs.joinAll()
         LOG.info("Processed all ${files.size} GeoJson files.")
