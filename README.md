@@ -25,5 +25,5 @@ To see coroutine names in log, supply the `-Dkotlinx.coroutines.debug` VM option
 This osm-coloring-service currently comprises three internal services that communicate via Kotlin channels:
 ReaderService -> TransformerService -> ElasticIndexService
 
-The reader service reads in geo-json files, the transformer service creates GeoFeatures that then can be indexed
+The reader service reads in geo-json files, the transformer service creates ElasticSegments that then can be indexed
 by the ElasticIndexService.
