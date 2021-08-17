@@ -35,3 +35,6 @@ build/
 ### Other ###
 logs/*.log
 logs/archived/*.log
+.DS_Store
+*all.json
+Berlin.json
